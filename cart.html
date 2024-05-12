@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="head">
+        <div>
+            <a href="index.html"><h1>My Cart</h1></a>
+        </div>
+        <div class="total-div">
+            <a href="" class="notif"><img class="cart-logo" src="assets/shopping-cart.png" alt=""><span class="num">0</span></a>
+            <h2>Total Price = <span class="total">0</span> ₹</h2>
+        </div>
+    </section>
+    <section class="cart">
+        <div class="empty">
+            <h2>Cart is Empty</h2>
+            <div>
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </section>
+    <section class="cart-items">
+        <div class="product-cart hidden" >
+            <div class="product-cart-img-div">
+                <img class="product-cart-img" src="assets/dress1.jfif" alt="">
+            </div>
+            <div class="product-cart-details">
+                <h2 class="product-cart-name">Draped Dress</h2>
+                <div class="product-cart-cost">
+                    <h1><span class="price">1499</span> ₹</h1>
+                    <div class="product-cart-btn-div">
+                        <div>
+                            <button class="product-cart-btn-minus btn-a"><img class="minus-img" src="assets/minus.png" alt=""></button>
+                        </div>
+                        <p class="quantity">0</p>
+                        <div>
+                            <button class="product-cart-btn-plus btn-a"><img class="plus-img" src="assets/plus.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="cart.js"></script>
+</body>
+</html>

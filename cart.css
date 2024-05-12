@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Dekko&family=Handlee&family=Josefin+Sans:wght@200;300;400;500;600;700&family=Just+Another+Hand&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap");
+
+body {
+  /* display: flex; */
+  width: 100%;
+  justify-content: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+}
+
+.head {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  gap: 80px;
+  padding: 20px;
+  background-color: #7899a7;
+  color: #fff;
+  /* border-bottom: 1px solid #000; */
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: "Sacramento", cursive;
+}
+
+.head a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.head h1 {
+  font-size: 30px;
+}
+
+.cart-logo {
+  width: 40px;
+  /* background-color: #fff; */
+}
+
+.cart {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.empty h2 {
+  font-weight: 400;
+}
+
+.empty a {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: 300;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.total-div{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.total-div h2{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+a.notif {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  text-decoration: none;
+}
+.num {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+
+.cart-items {
+  display: flex;
+  width: 90%;
+  /* height: 700px; */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.product-cart {
+  width: 500px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  /* padding: 10px; */
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #cad5e2;
+  transition: 300ms;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.product-cart-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 150px;
+  gap: 5px;
+  padding: 10px;
+}
+
+.product-cart-name {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.product-cart-cost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.product-cart-cost h1 {
+  font-size: 20px;
+  font-weight: 400;
+  width: 100px;
+}
+
+.product-cart-btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90px;
+}
+
+.product-cart-img {
+  width: 100%;
+}
+
+.btn-a {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  transition: 150ms;
+}
+
+.plus-img {
+  width: 10px;
+}
+
+.minus-img {
+  width: 10px;
+}
+
+.product-cart:hover {
+  transform: scale(0.98);
+  /* cursor: pointer; */
+}
+
+.btn-a:hover {
+  transform: scale(1.71);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+.total-div{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+@media screen and (max-width:538px) {
+  .cart-items{
+    width: 100%;
+  }
+  .head{
+    gap: 10px;
+  }
+  .total-div h2{
+    font-size: 20px;
+  }
+  .num{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:408px) {
+  .total-div{
+    gap: 10px;
+  }
+  .total-div h2{
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .head h1{
+    width: max-content;
+    font-size: 24px;
+  }
+  .num{
+    font-size: 12px;
+  }
+  .head{
+    gap: 10px;
+    padding: 20px;
+  }
+}
